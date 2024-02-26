@@ -1,4 +1,5 @@
 ## Brain Tumor Multiclass Classification :brain: - Computer Vision Model using a Convolutional Neuronal Network
+
 This project focuses on creating a convolutional neural network designed to classify MRI scans into three categories:
 
 ***Gliomas, meningiomas and pituitary tumors.***
@@ -12,8 +13,9 @@ The purpose of this model is to assist neuroradiologists in diagnosing these bra
 - [Brain Tumor Image Dataset](https://www.kaggle.com/datasets/denizkavi1/brain-tumor/data) (2)
 
 ## Data Set & Preprocessing
-Total number of images: 3064
-Glioma images: 1426 (46,5%), Meningioma images: 708 (23,1%), Pituitary tumor images: 930 (30,4%)
+Total number of MRI scans: 3064
+Glioma images: 1426 (46.5%), Meningioma images: 708 (23.1%), Pituitary tumor images: 930 (30.4%)
+The data set was split into a **training set** (80%, 2451 records), a **validation set** (10%, 306 records) and a **test set** (10%, 307 records).
 
 ## Pre-trained Base ResNet50  
 For this task, a Convolutional Neural Network (CNN) known as ResNet50 was employed as the pre-trained base. It was compared against other CNN models like VGG16 and VGG19, showing significantly superior performance. 
@@ -54,7 +56,7 @@ Recall is a good choice when minimizing false negative predictions is crucial.
 <img width="99" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/997983e0-fab6-449d-a330-bf6c128055a6">
 
 ### F1-Score 
-F1-Score is suitable for situations where both false positives and false negatives are important to consider and when precision and recall are balanced(4)
+F1-Score is suitable for situations where both false positives and false negatives are important to consider and when precision and recall are balanced (4).
 
 <img width="506" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/0efc1f75-eccb-4670-ace2-637573984049">
 
@@ -65,9 +67,9 @@ Matrix of actual vs predicted classes for every instance. Each cell contains a c
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## References 
-(1) Cheng, Jun, et al. "Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation and Partition." PloS one 10.10 (2015). [URL](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4598126/).
+(1) Cheng, Jun, et al. "Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation and Partition." PloS one 10.10 (2015). [doi: 10.1371/journal.pone.0140381.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4598126/)
 
-(2) DENIZ KAVI. Brain Tumor Image Dataset, Retrieved 2/2024 from [URL](https://www.kaggle.com/datasets/denizkavi1/brain-tumor?rvi=1).
+(2) DENIZ KAVI. Brain Tumor Image Dataset, Retrieved 2/2024 from [Kaggle](https://www.kaggle.com/datasets/denizkavi1/brain-tumor?rvi=1)
 
 (3) Kaiming H. et al. "Deep Residual Learning for Image Recognition". 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [URL](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf).
 
