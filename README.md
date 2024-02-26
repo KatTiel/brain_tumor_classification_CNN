@@ -1,6 +1,6 @@
 ## Brain Tumor Multiclass Classification :brain: - Computer Vision Model using a Convolutional Neuronal Network
 
-This project focuses on creating a convolutional neural network designed to classify MRI scans into three categories:
+This project focuses on creating a convolutional neural network designed to classify brain tumor MRI scans into three categories:
 
 ***Gliomas, meningiomas and pituitary tumors.***
 
@@ -13,15 +13,17 @@ The purpose of this model is to assist neuroradiologists in diagnosing these bra
 - [Brain Tumor Image Dataset](https://www.kaggle.com/datasets/denizkavi1/brain-tumor/data) (2)
 
 ## Data Set & Preprocessing
-Total number of MRI scans: 3064
-Glioma images: 1426 (46.5%), Meningioma images: 708 (23.1%), Pituitary tumor images: 930 (30.4%)
+Total number of MRI scans: 3064  
+
+Glioma images: 1426 (46.5%), Meningioma images: 708 (23.1%), Pituitary tumor images: 930 (30.4%)  
+
 The data set was split into a **training set** (80%, 2451 records), a **validation set** (10%, 306 records) and a **test set** (10%, 307 records).
 
 ## Pre-trained Base ResNet50  
-For this task, a Convolutional Neural Network (CNN) known as ResNet50 was employed as the pre-trained base. It was compared against other CNN models like VGG16 and VGG19, showing significantly superior performance. 
+For this task, a Convolutional Neural Network (CNN) known as ResNet50 was employed as the pre-trained base. It was prior compared against other CNN models like VGG16 and VGG19, showing a significantly superior performance. 
 ResNet50 has 50 layers and makes use of a technique called residual learning. This involves using shortcuts/skip connections between layers to learn adjustments to the input data rather than attempting to directly learn the entire transformation. This approach makes the network very effective.
 
-## Strategies to Diminish Overfitting
+## Strategies used to Diminish Overfitting
 ### Dropout
 Randomly selected neurons are dropped out or ignored with a certain probability. This encourages generalization as the network does not rely too heavily on individual neurons.
 
@@ -61,7 +63,7 @@ F1-Score is suitable for situations where both false positives and false negativ
 <img width="506" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/0efc1f75-eccb-4670-ace2-637573984049">
 
 ### Confusion Matrix
-Matrix of actual vs predicted classes for every instance. Each cell contains a count of how many instances were classifies into a particular combination of actual and predicted classes. The diagonal represents the classes which were correctly classified.
+Matrix of actual vs predicted classes for every instance. Each cell contains a count of how many instances were classified into a particular combination of actual and predicted classes. The diagonal represents the classes which were correctly classified.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
