@@ -22,7 +22,9 @@ During training, the model's performance on the validation set is monitored. The
 
 ### Performance Measurements
 Several performance valuations were conducted to gain a detailed perspective on the predictions made with the test data:
-<img width="453" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/61b24849-5012-436f-a80e-ce089fbef9d2">
+
+
+:arrow_right: <img width="453" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/61b24849-5012-436f-a80e-ce089fbef9d2"> :heavy_exclamation_mark:
 
 #### Accuracy
 <img width="161" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/7417c4b4-09d8-4dba-bb11-8e9e9dbebc1e">
