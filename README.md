@@ -42,7 +42,7 @@ During training, the model's performance on the validation set is monitored. The
 Several performance valuations were conducted to gain a detailed perspective on the predictions made with the ***test data***:
 
 
-:heavy_exclamation_mark: <img width="453" alt="" src=<img width="458" alt="" src="https://github.com/KatTiel/brain_tumor_classification_CNN/assets/76701992/0bb2c678-8920-4814-b85d-512444f8527e"> 
+:heavy_exclamation_mark: <img width="458" alt="" src="https://github.com/KatTiel/brain_tumor_classification_CNN/assets/76701992/0bb2c678-8920-4814-b85d-512444f8527e"> 
 
 ### Accuracy
 Accuracy is a good performance parameter when all classes are equally important and there are no significant class imbalances. In this project, classes were not well-balanced.
