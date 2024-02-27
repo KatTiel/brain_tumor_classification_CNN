@@ -9,10 +9,12 @@ The purpose of this model is to assist neuroradiologists in diagnosing these bra
 ## Prerequisites 
 - [Python 3.11](https://www.python.org/downloads/release/python-3110/)
 - Jupyter Notebook ```pip install notebook ```
-- [Required dependencies](.......) ```pip install -r requirements.txt ```
-- [Brain Tumor Image Dataset](https://www.kaggle.com/datasets/denizkavi1/brain-tumor/data) (2)
+- [Required dependencies](https://github.com/KatTiel/brain_tumor_classification_CNN/blob/main/requirements.txt) ```pip install -r requirements.txt ```
+- [Brain Tumor Image Dataset](https://www.kaggle.com/datasets/denizkavi1/brain-tumor/data) (1)
 
 ## Data Set & Preprocessing
+The original data set derived from 233 patients and was utilized for scientific publications and later converted to PNG images and published on Kaggle (1, 2).
+
 Total number of MRI scans: 3064  
 
 Glioma images: 1426 (46.5%), Meningioma images: 708 (23.1%), Pituitary tumor images: 930 (30.4%)  
@@ -20,7 +22,7 @@ Glioma images: 1426 (46.5%), Meningioma images: 708 (23.1%), Pituitary tumor ima
 The data set was split into a **training set** (80%, 2451 records), a **validation set** (10%, 306 records) and a **test set** (10%, 307 records).
 
 ## Pre-trained Base ResNet50  
-For this task, a Convolutional Neural Network (CNN) known as ResNet50 was employed as the pre-trained base. It was prior compared against other CNN models like VGG16 and VGG19, showing a significantly superior performance. 
+For this task, a Convolutional Neural Network (CNN) known as ResNet50 was employed as the pre-trained base (3). It was prior compared against other CNN models like VGG16 and VGG19, showing a significantly superior performance. 
 ResNet50 has 50 layers and makes use of a technique called residual learning. This involves using shortcuts/skip connections between layers to learn adjustments to the input data rather than attempting to directly learn the entire transformation. This approach makes the network very effective.
 
 ## Strategies used to Diminish Overfitting
@@ -40,7 +42,7 @@ During training, the model's performance on the validation set is monitored. The
 Several performance valuations were conducted to gain a detailed perspective on the predictions made with the ***test data***:
 
 
-:heavy_exclamation_mark: <img width="453" alt="" src="https://github.com/KatTiel/stroke_binary_classification_CNN/assets/76701992/61b24849-5012-436f-a80e-ce089fbef9d2"> 
+:heavy_exclamation_mark: <img width="453" alt="" src=<img width="458" alt="" src="https://github.com/KatTiel/brain_tumor_classification_CNN/assets/76701992/0bb2c678-8920-4814-b85d-512444f8527e"> 
 
 ### Accuracy
 Accuracy is a good performance parameter when all classes are equally important and there are no significant class imbalances. In this project, classes were not well-balanced.
@@ -69,9 +71,10 @@ Matrix of actual vs predicted classes for every instance. Each cell contains a c
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## References 
-(1) Cheng, Jun, et al. "Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation and Partition." PloS one 10.10 (2015). [doi: 10.1371/journal.pone.0140381.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4598126/)
+(1) DENIZ KAVI. Brain Tumor Image Dataset, Retrieved 2/2024 from [Kaggle](https://www.kaggle.com/datasets/denizkavi1/brain-tumor?rvi=1)
 
-(2) DENIZ KAVI. Brain Tumor Image Dataset, Retrieved 2/2024 from [Kaggle](https://www.kaggle.com/datasets/denizkavi1/brain-tumor?rvi=1)
+(2) Cheng, Jun, et al. "Enhanced Performance of Brain Tumor Classification via Tumor Region Augmentation and Partition." PloS one 10.10 (2015). [doi: 10.1371/journal.pone.0140381.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4598126/)
+
 
 (3) Kaiming H. et al. "Deep Residual Learning for Image Recognition". 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). [URL](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf).
 
